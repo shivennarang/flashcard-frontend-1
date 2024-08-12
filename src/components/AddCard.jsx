@@ -6,7 +6,7 @@ function AddCard({ onClose, onAdd }) {
 
   const handleSubmit = () => {
     if (question && answer) {
-      fetch('http://localhost:5000/flashcards', {
+      fetch('flashcard-backend-1-production.up.railway.app/flashcards', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
