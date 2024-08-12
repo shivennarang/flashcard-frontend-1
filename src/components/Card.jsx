@@ -9,7 +9,7 @@ function Card({ id, question, answer, onDelete, onUpdate }) {
   const handleFlip = () => setIsFlipped(!isFlipped);
 
   const handleUpdate = () => {
-    fetch(`http://localhost:5000/flashcards/${id}`, {
+    fetch(`flashcard-backend-1-production.up.railway.app/flashcards/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
