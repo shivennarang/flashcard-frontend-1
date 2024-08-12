@@ -9,7 +9,7 @@ function FlashCards({ flashcards, onAdd }) {
   const [cards, setCards] = useState(flashcards);
 
   useEffect(() => {
-    fetch('flashcard-backend-1-production.up.railway.app/')
+    fetch('flashcard-backend-1-production.up.railway.app')
       .then(response => response.json())
       .then(data => setCards(data))
       .catch(error => console.error('Error fetching flashcards:', error));
