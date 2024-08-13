@@ -9,14 +9,14 @@ function FlashCards({ flashcards, onAdd }) {
   const [cards, setCards] = useState(flashcards);
 
   useEffect(() => {
-    fetch('flashcard-backend-1-production.up.railway.app')
+    fetch('https://lll-rosy.vercel.app/')
       .then(response => response.json())
       .then(data => setCards(data))
       .catch(error => console.error('Error fetching flashcards:', error));
   }, [flashcards]);
 
   const handleDelete = (id) => {
-    fetch(`flashcard-backend-1-production.up.railway.app/flashcards/${id}`, {
+    fetch(`https://lll-rosy.vercel.app/flashcards/${id}`, {
       method: 'DELETE'
     })
     .then(() => {
