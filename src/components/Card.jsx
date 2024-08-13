@@ -9,7 +9,7 @@ function Card({ id, question, answer, onDelete, onUpdate }) {
   const handleFlip = () => setIsFlipped(!isFlipped);
 
   const handleUpdate = () => {
-    fetch(`flashcard-backend-1-production.up.railway.app/flashcards/${id}`, {
+    fetch(`https://lll-rosy.vercel.app/flashcards/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
