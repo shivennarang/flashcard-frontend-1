@@ -6,7 +6,7 @@ function AddCard({ onClose, onAdd }) {
 
   const handleSubmit = () => {
     if (question && answer) {
-      fetch('flashcard-backend-1-production.up.railway.app/flashcards', {
+      fetch('https://lll-rosy.vercel.app/flashcards', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
